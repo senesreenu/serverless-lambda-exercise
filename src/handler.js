@@ -6,7 +6,7 @@ module.exports.s3TriggerToLambda = async (event) => {
   const today = new Date();
   console.log(today);
   var params = {
-      Bucket : "testbucketfromlambda666",
+      Bucket : "testbucketfromlambda555",
          Key : "test3.txt",
         Body : today.toString()
   };
