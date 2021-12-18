@@ -1,0 +1,12 @@
+service: serverless-lambda-exercise
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  #stage: dev
+  region: ap-south-1
+
+functions:
+  s3TriggerToLambda:
+    handler: src/handler.s3TriggerToLambda
+    name: s3-trigger-to-lambda
