@@ -1,5 +1,5 @@
 #https://github.com/serverless/github-action
-name: Lambda to trigger lambda function from s3 .
+name: Lambda to trigger lambda function from s3
 
 on:
   push:
