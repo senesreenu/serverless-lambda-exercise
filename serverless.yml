@@ -8,9 +8,9 @@ provider:
 
 functions:
   s3TriggerToLambda:
-    handler: src/s3/handler.s3TriggerToLambda
+    handler: src/s3/s3TriggerToLambda.s3TriggerToLambda
     name: s3-trigger-to-lambda
 
   countItemsInS3Bucket:
-    handler: src/s3/handler.countItemsInS3Bucket
+    handler: src/s3/countItemsInS3Bucket.countItemsInS3Bucket
     name: count-items-in-s3-bucket
