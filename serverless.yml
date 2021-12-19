@@ -3,10 +3,14 @@ service: serverless-lambda-exercise
 provider:
   name: aws
   runtime: nodejs14.x
-  #stage: dev
+  stage: dev
   region: ap-south-1
 
 functions:
   s3TriggerToLambda:
-    handler: src/handler.s3TriggerToLambda
+    handler: src/s3/handler.s3TriggerToLambda
     name: s3-trigger-to-lambda
+
+  countItemsInS3Bucket:
+    handler: src/s3/handler.countItemsInS3Bucket
+    name: count-items-in-s3-bucket
