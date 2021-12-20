@@ -7,10 +7,10 @@ provider:
   region: ap-south-1
 
 functions:
-  # s3TriggerToLambda:
-  #   handler: src/s3TriggerToLambda/index.handler
-  #   name: s3-trigger-to-lambda
+  s3TriggerToLambda:
+    handler: src/s3TriggerToLambda/index.handler
+    name: s3-trigger-to-lambda
 
   countItemsInS3Bucket:
     handler: src/countItemsInS3Bucket/index.handler
-    name: count-items-in-s3-bucket
+#    name: count-items-in-s3-bucket
