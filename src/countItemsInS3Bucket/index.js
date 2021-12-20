@@ -3,7 +3,7 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3();
 
-exports.handler = async (event) => {
+exports.countItemsInS3Bucket = async (event) => {
     const data = await s3.listObjectsV2({Bucket: "hydoodle-starter"}).promise();
     console.log(data.KeyCount);
     return data.KeyCount;

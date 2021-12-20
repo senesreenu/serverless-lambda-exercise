@@ -3,7 +3,7 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3();
 
-exports.handler = async (event) => {
+exports.s3TriggerToLambda = async (event) => {
   const today = new Date();
   console.log(today);
   var params = {
