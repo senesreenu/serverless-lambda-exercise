@@ -13,4 +13,4 @@ functions:
 
   countItemsInS3Bucket:
     handler: src/countItemsInS3Bucket/index.handler
-#    name: count-items-in-s3-bucket
+    name: count-items-in-s3-bucket
