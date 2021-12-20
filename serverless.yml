@@ -12,5 +12,5 @@ functions:
     name: s3-trigger-to-lambda
 
   countItemsInS3Bucket:
-    handler: index.handler
+    handler: index.countItemsInS3Bucket
     name: count-items-in-s3-bucket
